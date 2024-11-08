@@ -1,0 +1,115 @@
+.form-builder {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  height: calc(100vh - 80px);
+}
+
+.sidebar {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.preview-toggle {
+  padding: 0.5rem 1rem;
+  background: #4299e1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background 0.2s;
+}
+
+.preview-toggle:hover {
+  background: #3182ce;
+}
+
+.controls-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.form-preview {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  overflow-y: auto;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.save-button,
+.reset-button,
+.export-button,
+.import-button {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.save-button {
+  background: #48bb78;
+  color: white;
+}
+
+.save-button:hover {
+  background: #38a169;
+}
+
+.export-button {
+  background: #805ad5;
+  color: white;
+}
+
+.export-button:hover {
+  background: #6b46c1;
+}
+
+.import-button {
+  background: #4299e1;
+  color: white;
+}
+
+.import-button:hover {
+  background: #3182ce;
+}
+
+.reset-button {
+  background: #f56565;
+  color: white;
+}
+
+.reset-button:hover {
+  background: #e53e3e;
+}
+
+h2 {
+  color: #2d3748;
+  font-size: 1.25rem;
+  margin: 0 0 1rem;
+} 
